@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@color/material_dynamic_secondary70">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="HesapMakinesi"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/Sayi1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="35dp"
+            android:background="@color/material_dynamic_secondary80"
+            android:gravity="center"
+            android:hint="Sayi_1" />
+
+        <EditText
+            android:id="@+id/Sayi2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="35dp"
+            android:background="@color/material_dynamic_secondary80"
+            android:gravity="center"
+            android:hint="Sayi_2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sonuc"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@color/material_dynamic_secondary80"
+            android:hint="Sonuc"
+            android:gravity="center"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cornerRadius="30dp"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_margin="12dp"
+            android:textSize="35dp"
+            android:text="-"
+            android:id="@+id/cikarma"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cornerRadius="30dp"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_margin="12dp"
+            android:textSize="35dp"
+            android:text="+"
+            android:id="@+id/toplama" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cornerRadius="30dp"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_margin="12dp"
+            android:textSize="35dp"
+            android:text="/"
+            android:id="@+id/bolme"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cornerRadius="30dp"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_margin="12dp"
+            android:textSize="35dp"
+            android:text="x"
+            android:id="@+id/carpma"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="140dp"
+            android:layout_height="70dp"
+            app:cornerRadius="30dp"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_margin="12dp"
+            android:textSize="25dp"
+            android:text="="
+            android:id="@+id/esittir"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
